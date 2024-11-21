@@ -40,9 +40,11 @@ ul {
   .portfolio .imgs-conteiner .box {
     flex-basis: 50%;
   }
+  
   .stats .contntr .box {
     width: calc(50% - 100px);
   }
+  /* skills */
   .skills .contntr > * {
     flex-basis: 90%;
   }
@@ -896,7 +898,7 @@ div.about {
 .subscribe .contntr {
   display: flex;
   position: relative;
-  text-align: center;
+  align-items: center;
 }
 .subscribe .contntr form {
   position: relative;
@@ -918,5 +920,11 @@ div.about {
   border: 2px solid;
   border-left: none;
   width: 130px;
+}
+.subscribe .contntr p {
+  text-align: left;
+  margin-left: 50px;
+  line-height: 2;
+  margin-top: 29px;
 }
 /* end subscribe */
