@@ -905,8 +905,12 @@ div.about {
   max-width: 100%;
   display: flex;
 }
+.subscribe .contntr form input[type="email"]::placeholder {
+  color: white;
+}
 .subscribe .contntr form input[type="email"] {
   background:none ;
+  color: white;
   caret-color: var(--main-color);
   border: solid white 2px;
   outline: none;
