@@ -878,5 +878,45 @@ div.about {
 .subscribe {
   padding-top:var(--section-padding) ;
   padding-bottom:var(--section-padding) ;
+  background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+}
+.subscribe .contntr {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+.subscribe .contntr form {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+}
+.subscribe .contntr form input[type="email"] {
+  background:none ;
+  caret-color: var(--main-color);
+  border: solid white 2px;
+  border-right: none;
+  padding: 20px 20px 20px 60px;
+  width: calc(100% - 130px);
+}
+.subscribe .contntr form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid;
+  border-left: none;
+  width: 130px;
 }
 /* end subscribe */
