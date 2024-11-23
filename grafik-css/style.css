@@ -908,11 +908,17 @@ div.about {
 .subscribe .contntr form input[type="email"]::placeholder {
   color: white;
 }
+.subscribe .contntr form input::selection[type="email"]:focus {
+  outline: none;
+  color: white;
+  background: none;
+
+}
 .subscribe .contntr form input[type="email"] {
   background:none ;
   color: white;
   caret-color: var(--main-color);
-  border: solid white 2px;
+  border: solid white 1px;
   outline: none;
   border-right: none;
   padding: 20px 20px 20px 60px;
@@ -921,7 +927,7 @@ div.about {
 .subscribe .contntr form input[type="submit"] {
   background-color: var(--main-color);
   color: white;
-  border: 2px solid;
+  border: 1px solid;
   border-left: none;
   width: 130px;
 }
