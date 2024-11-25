@@ -162,9 +162,7 @@ nav.links ul li a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-nav.links ul li a.active {
-  color: var(--main-color);
-}
+
 nav.links ul li a:hover {
   color: var(--main-color);
 }
@@ -217,8 +215,7 @@ nav .iconsersh {
     width: calc(100% - 20%);
     padding: 0px 10% 0px;
     overflow: hidden;
-    background-color: var(--color-blueuit);
-    opacity: 50%;
+    background-color: #00000045;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -1032,3 +1029,53 @@ div.about {
 }
 }
 /* end contact */
+/* start footer */
+div.footer {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) - 50px);
+  background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+div.footer::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:#00000080 ;
+
+}
+.footer .contntr {
+  position: relative;
+}
+.footer .contntr img {
+  margin-bottom: 20px;
+}
+.footer .contntr p:first-of-type {
+  padding: 20px;
+  margin: 20px auto;
+  border-bottom: solid 1px white;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+}
+.footer .contntr .cosial-icons i {
+  padding: 10px 15px;
+}
+.footer .contntr .cosial-icons i:hover {
+  color: var(--main-color);
+}
+.footer .contntr .copyright {
+  margin-top: 60px;
+}
+.footer .contntr .copyright span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+/* end footer */
